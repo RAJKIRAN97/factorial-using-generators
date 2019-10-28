@@ -1,0 +1,14 @@
+def factorial_gen(n):
+    f=1
+    for i in range(0,n):
+        if i==0 or i==1:
+            yield 1 
+        else:
+            f=f*i
+            yield f
+fs=factorial_gen(5)
+print(next(fs))
+print(next(fs))
+print(next(fs))
+print(next(fs))
+
